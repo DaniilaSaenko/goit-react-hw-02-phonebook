@@ -4,6 +4,7 @@ export const Input = styled.input`
   display: block;
   margin-top: 3px;
   padding: 5px 15px;
+  border-radius: ${p => p.theme.radii.normal};
 `;
 
 export const Button = styled.button`
@@ -12,8 +13,8 @@ export const Button = styled.button`
   display: inline-flex;
 
 border-radius: ${p => p.theme.radii.normal};
-border: ${p => p.theme.colors.muted};
-  background: ${p => p.theme.colors.muted};
+border: ${p => p.theme.colors.blue};
+  background: ${p => p.theme.colors.blue};
   font-size: ${p => p.theme.fontSizes.m};
   font-weight: ${p => p.theme.fontWeights.bold};
   text-transform: capitalize;

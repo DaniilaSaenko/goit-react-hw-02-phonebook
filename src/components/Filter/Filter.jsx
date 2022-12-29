@@ -7,8 +7,8 @@ export const Filter = ({ value, onChange }) => (
   <Box mt={10}>
     <Label>
       Find contacts by name
-      <Input type="text" value={value} onChange={onChange} />
-    </Label>
+      <Input type="text" value={value} placeholder="Search..." onChange={onChange} />
+    </Label> 
   </Box>
 );
 

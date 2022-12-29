@@ -14,8 +14,8 @@ export const ListItem = styled.li`
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    width: 10px;
-    height: 10px;
+    width: 7px;
+    height: 7px;
     border-radius: ${p => p.theme.radii.round};
     background-color: ${p => p.theme.colors.blue};
   }
@@ -30,9 +30,14 @@ export const Button = styled.button`
   display: inline-flex;
   margin-left: 20px;
   border-radius: ${p => p.theme.radii.normal};
-  background-image: linear-gradient(
-    ${p => p.theme.colors.blue} 50%,
-    ${p => p.theme.colors.yellow} 50%
-  );
+  border: ${p => p.theme.colors.blue};
+  background: ${p => p.theme.colors.blue};
   cursor: pointer;
+     &:hover, &:focus {
+        color: ${p => p.theme.colors.white};
+        background: ${p => p.theme.colors.blue};
+        border: ${p => p.theme.colors.blue};
+        outline: transparent;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.20);
+        };
 `;
